@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <img src="https://yt3.googleusercontent.com/ytc/AIdro_m1AnBwtMLM8P7MBtz72g19-YT_yuK0x0iqav8ZnTUVGQ=s900-c-k-c0x00ffffff-no-rj"
+            alt="">
+    </header>
+
+    <nav>
+        <a class="nav-item" href="#">Home</a>
+        <a class="nav-item" href="#">Our Profile</a>
+        <a class="nav-item" href="#">Portofolio</a>
+        <a class="nav-item" href="#">Message Us</a>
+    </nav>
+
+    <section class="home" id="home">
+        <h1>Hi Harfi, Welcome To Website</h1>
+        <h3>Ini adalah website latihan pertama</h3>
+    </section>
+
+    <hr>
+
+    <section class="profile" id="ourprofile">
+        <div class="pad">
+            <h1>Our Headquarter</h1>
+
+            <div class="box-container">
+                <div class="boxes">
+                    <div class="img-box">
+                        <img src="https://i.pinimg.com/736x/0d/84/16/0d8416d15a838293cabd8e13f91aadac.jpg" alt="">
+                        <p>Jakarta</p>
+                    </div>
+                    <div class="img-box">
+                        <img src="https://i.pinimg.com/736x/0d/84/16/0d8416d15a838293cabd8e13f91aadac.jpg" alt="">
+                        <p>Bandung</p>
+                    </div>
+                    <div class="img-box">
+                        <img src="https://i.pinimg.com/736x/0d/84/16/0d8416d15a838293cabd8e13f91aadac.jpg" alt="">
+                        <p>Surabaya</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <hr>
+
+    <section class="message" id="messageUs">
+        <h1>Message Us</h1>
+
+        <div class="message-input">
+            <div class="container">
+                <table>
+                    <tr>
+                        <td>Nama</td>
+                        <td>:</td>
+                        <td><input type="text" placeholder="Nama" id="nama"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="tgl_lahir">Tanggal Lahir</label></td>
+                        <td>:</td>
+                        <td><input type="date" id="tgl_lahir" name="tgl_lahir" title="Masukkan tanggal lahir"
+                                placeholder="Tanggal Lahir"></td>
+                    </tr>
+                    <tr>
+                        <td>Jenis Kelamin</td>
+                        <td>:</td>
+                        <td>
+                            <input type="radio" name="jk" id="jk" value="Laki-Laki"><label for="jk">Laki-Laki</label>
+                            <input type="radio" name="jk" id="jk" value="Perempuan"><label for="jk">Perempuan</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Pesan</td>
+                        <td>:</td>
+                        <td><textarea name="pesan" id="pesan" placeholder="Pesan"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3"><input type="submit" onclick="execute()"></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="output">
+                <p><span class="bold">Current Time</span> : <span id="currtime"></span></p>
+                <br>
+                <p><span class="bold">Nama</span> : <span id="namaout"></span></p>
+                <p><span class="bold">Tanggal Lahir</span> : <span id="tlout"></span></p>
+                <p><span class="bold">Jenis Kelamin</span> : <span id="jkout"></span></p>
+                <p><span class="bold">Pesan</span> : <span id="msgout"></span></p>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
